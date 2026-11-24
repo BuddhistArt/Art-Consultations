@@ -4,9 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payment Confirmed — Schedule Your Session</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Marcellus&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
   </head>
-  <body style="font-family: system-ui, sans-serif; max-width: 640px; margin: 60px auto; padding: 0 20px; line-height: 1.6;">
-    <h1>Payment Confirmed</h1>
-    <p>Thank you for booking. email me at buddhistartconsulting@proton.me to schedule your session.:</p>
+  <body>
+    <header class="wrap site-header">
+      <a class="wordmark" href="/">Buddhist Art Consulting</a>
+    </header>
+
+    <main class="wrap confirm">
+      <div>
+        <p class="eyebrow rise" style="--d: 0">Booking Received</p>
+        <h1 class="rise" style="--d: 1">Payment Confirmed</h1>
+        <p class="rise" style="--d: 2">
+          Thank you for booking. Email me at
+          <a href="mailto:buddhistartconsulting@proton.me">buddhistartconsulting@proton.me</a>
+          to schedule your session.
+        </p>
+      </div>
+      <figure class="rise" style="--d: 3">
+        <img src="/images/hadda-buddha.jpg" width="688" height="900" alt="Pale stucco sculpture of the Buddha seated in meditation, hands resting in his lap" />
+        <figcaption class="caption">
+          <em>Seated Buddha</em>
+          Afghanistan, Hadda, c. 300 CE. Stucco. The Cleveland Museum of Art, 1967.39.
+        </figcaption>
+      </figure>
+    </main>
   </body>
 </html>
