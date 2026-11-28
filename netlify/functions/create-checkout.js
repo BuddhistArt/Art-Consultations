@@ -5,8 +5,8 @@ exports.handler = async (event) => {
   const session = await stripe.checkout.sessions.create({
     mode: "payment",
     line_items: [{ price: priceId, quantity }],
-    success_url: "https://yoursite.netlify.app/success.html",
-    cancel_url: "https://yoursite.netlify.app/",
+    success_url: "https://art-consultations.netlify.app/success.html",
+    cancel_url: "https://art-consultations.netlify.app/",
   });
   return { statusCode: 200, body: JSON.stringify({ url: session.url }) };
 };   
