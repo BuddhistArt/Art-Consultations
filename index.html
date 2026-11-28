@@ -167,7 +167,7 @@
     </script>
     <script>
 async function checkout() {
-  const res = await fetch("/.netlify/functions/create-checkout", {
+  const res = await fetch("/create-checkout", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ priceId: "price_1UgeOvApd2G4Lvmpo3fLbL8s" })
