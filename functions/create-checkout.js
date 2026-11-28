@@ -1,10 +1,10 @@
 import Stripe from "stripe";
 
-const stripe = new Stripe("", {
-  httpClient: Stripe.createFetchHttpClient(),
-});
-
 export async function onRequest(context) {
+  const stripe = new Stripe(context.env.STRIPE_SECRET_KEY, {
+    httpClient: Stripe.createFetchHttpClient(),
+  });
+
   const { priceId, quantity = 1 } = await context.request.json();
 
   const session = await stripe.checkout.sessions.create({
